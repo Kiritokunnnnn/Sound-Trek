@@ -1,0 +1,533 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  height: 100%; /* Chiếm toàn bộ chiều cao */
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #17a74b;
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+}
+
+.song-item {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.song-item img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.spotify-link {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 15px;
+  background-color: #1db954;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.spotify-link:hover {
+  background-color: #17a74b;
+}
+
+.location-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.location-btn:hover {
+  background-color: #0056b3;
+}
+
+.fav-btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.fav-btn:hover {
+  background-color: #e03572;
+}
+
+.remove-btn {
+  background-color: #ff3b30;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+.toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.fav-btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.fav-btn:hover {
+  background-color: #e03572;
+}
+
+.fav-btn.saved {
+  background-color: #4caf50;
+  /* Xanh lá */
+  pointer-events: none;
+  /* Không bấm lại được */
+}
+
+.song-item {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.song-item.removed {
+  opacity: 0;
+}
+
+/* 🌓 Dark Mode CSS */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.dark-mode .search-box input {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .search-box button {
+  background-color: #444;
+  color: white;
+}
+
+.dark-mode .song-item {
+  background-color: #282828;
+  border: 1px solid #444;
+}
+
+.dark-mode .fav-btn {
+  background-color: #ff4081;
+}
+
+.dark-mode .fav-btn.saved {
+  background-color: #4caf50;
+}
+
+.dark-mode .remove-btn {
+  background-color: #ff3b30;
+}
+
+.dark-mode-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.dark-mode-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.dark-mode h1 {
+  color: #1db954;
+  /* Màu xanh Spotify */
+  text-shadow: 2px 2px 4px rgba(29, 185, 84, 0.5);
+}
+
+/* Chỉnh lại style cho nút "Mở trên Spotify" */
+.spotify-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #1db954;
+  /* Màu xanh Spotify */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-btn:hover {
+  background-color: #17a74b;
+  /* Màu sáng hơn khi hover */
+}
+
+/* Đảm bảo các nút trong .song-actions hiển thị ngang hàng */
+.song-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spotify-login-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #1db954;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 14px;
+}
+
+.spotify-login-btn:hover {
+  background-color: #17a74b;
+}
+
+/* Hiển thị thông tin user */
+.user-info {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.user-info button {
+  background-color: #ff3b30;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.user-info button:hover {
+  background-color: #d32f2f;
+}
+
+.create-playlist-btn {
+  background-color: #1db954;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.create-playlist-btn:hover {
+  background-color: #17a74b;
+}
+
+.add-to-playlist-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.add-to-playlist-btn:hover {
+  background-color: #e03572;
+}
+
+.playlist-container {
+  margin-top: 20px;
+}
+
+.playlist-list {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.playlist-item:hover {
+  background: #e0e0e0;
+}
+
+.playlist-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.playlist-tracks-container {
+  margin-top: 20px;
+}
+
+.playlist-tracks-list {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist-track-item {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.playlist-track-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.spotify-btn {
+  padding: 5px 10px;
+  background-color: #1db954;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.spotify-btn:hover {
+  background-color: #17a74b;
+}
+
+body.dark-mode {
+  background: url('../public/dark-page.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Light Mode */
+body {
+  background: url('../public/light-page.jpg') no-repeat center center fixed;
+  background-size: cover;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Sửa lỗi chữ bị mất trong Dark Mode */
+.dark-mode {
+  color: white;
+}
+
+.dark-mode .modal-content {
+  background-color: #222;  /* Nền modal tối hơn */
+  color: white; /* Chữ trong modal sáng */
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+  background-color: #333;
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+}
+
+.dark-mode input {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+  background-color: #fffcfc;
+}
+
+/* Đảm bảo nút sáng hơn trong Dark Mode */
+.dark-mode .btn {
+  color: white;
+}
+
+.dark-mode .btn-primary {
+  background-color: #1db954; /* Màu xanh Spotify */
+  border-color: #1db954;
+}
+
+.dark-mode .btn-secondary {
+  background-color: #666;
+  border-color: #666;
+}
+
+/* Đảm bảo các nút trong modal có màu sáng */
+.dark-mode .modal-footer .btn {
+  color: white;
+}
+
+/* Dark mode cho modal */
+.dark-mode .modal-content {
+  background-color: #222; /* Nền tối */
+  color: white; /* Chữ sáng */
+  border: 1px solid #555;
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+  background-color: #333;
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+}
+
+.user-info button {
+  margin-right: 10px; /* Thêm khoảng cách giữa các nút */
+}
+
+.listen-btn {
+
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Khoảng cách giữa icon và chữ */
+  background-color: #1db954; /* Xanh Spotify */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: 240px;
+  transition: all 0.2s ease-in-out;
+}
+
+.listen-btn:hover {
+  background-color: #1aa34a; /* Màu hover tối hơn */
+}
+
+.listen-btn svg {
+  font-size: 16px;
+}
+
+.music-player-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.music-player-container iframe {
+  border-radius: 10px;
+  max-width: 500px; /* Giới hạn chiều rộng để không làm lệch layout */
+  min-width: 300px;
+}
+
+/* Style chung cho tiêu đề */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Chỉnh màu sắc cho Light Mode */
+.light-mode h1 {
+  color: #222; /* Màu tối hơn */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chỉnh màu sắc cho Dark Mode */
+.dark-mode h1 {
+  color: #1db954; /* Màu xanh Spotify */
+  text-shadow: 2px 2px 4px rgba(29, 185, 84, 0.5);
+}
+
+.hi-user{
+  margin-bottom:3px;
+}
+
