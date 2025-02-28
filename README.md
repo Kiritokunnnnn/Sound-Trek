@@ -4,7 +4,7 @@
 
 ## 📸 Screenshots
 
-![Homepage](https://github.com/Kiritokunnnnn/Sound-Trek/images/homepage.png)
+![Homepage](images/homepage.png)
 Sound Trek Home Page without log in
 ![Search Results](https://github.com/Kiritokunnnnn/Sound-Trek/images/favo-page.png)
 Unlimited Search Results
