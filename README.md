@@ -6,7 +6,7 @@
 
 ![Homepage](images/homepage.png)
 **Sound Trek Home Page without log in**
-![Search Results](images/Unlimited Search.png)
+![Search Results](images/UnlimitedSearch.png)
 **Unlimited Search Results**
 ![Favorites](https://github.com/Kiritokunnnnn/Sound-Trek/images/Unlimited Search.png)
 Favorite songs
