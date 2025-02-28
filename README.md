@@ -8,8 +8,24 @@
 **Sound Trek Home Page without log in**
 ![Search Results](https://github.com/Kiritokunnnnn/Sound-Trek/blob/51494665c90ea0143e5feec13357f36013a0ecbc/images/Unlimited%20Search.png) 
 **Unlimited Search Results**
-![Favorites](https://github.com/Kiritokunnnnn/Sound-Trek/images/Unlimited Search.png)
-Favorite songs
+![Favorites](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/after%20saved.png)
+**Save Favorite songs**
+![Song Preview](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/iframe%20preview.png)
+**Song Preview**
+![Open on Spotiy](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/open%20on%20spotify.png)
+**Open on Spotify button**
+![Light mode](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/light-mode.png)
+**Light mode**
+![Authorization](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/spotify%20authorization%20page.jpeg)
+**Log in Button will navigate to Spotify Authorization page**
+![After Log-in Page](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/homepage%20with%20login.png)
+**Get user information and new functionalities**
+![Modal](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/Modal%2C%20create%20new%20playlist.png)
+**Create new playlist**
+![Add song to playlist](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/adding%20song%20into%20playlist.png)
+**Add favorite songs into new playlist**
+![New Playlist](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/spotify%20screen%20after%20add%20songs.png)
+**Spotify new playlist created**
 ## 🚀 Features
 
 - 🔍 **Search for Songs**: Find songs from Spotify using keywords.
