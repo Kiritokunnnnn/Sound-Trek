@@ -5,9 +5,9 @@
 ## 📸 Screenshots
 
 ![Homepage](images/homepage.png)
-Sound Trek Home Page without log in
-![Search Results](https://github.com/Kiritokunnnnn/Sound-Trek/images/favo-page.png)
-Unlimited Search Results
+**Sound Trek Home Page without log in**
+![Search Results](images/Unlimited Search.png)
+**Unlimited Search Results**
 ![Favorites](https://github.com/Kiritokunnnnn/Sound-Trek/images/Unlimited Search.png)
 Favorite songs
 ## 🚀 Features
