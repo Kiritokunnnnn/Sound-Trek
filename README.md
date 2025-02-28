@@ -26,6 +26,8 @@
 **Add favorite songs into new playlist**
 ![New Playlist](https://github.com/Kiritokunnnnn/Sound-Trek/blob/c86d1f7839e15b469138ecadc4bda857575b59eb/images/spotify%20screen%20after%20add%20songs.png)
 **Spotify new playlist created**
+![API](https://github.com/Kiritokunnnnn/Sound-Trek/blob/7a0a7c63fb0964f620190e370b2ab1edff098141/images/API.png)
+**API**
 ## 🚀 Features
 
 - 🔍 **Search for Songs**: Find songs from Spotify using keywords.
@@ -85,6 +87,10 @@ REACT_APP_CLIENT_ID="your_spotify_client_id"
 REACT_APP_CLIENT_SECRET="your_spotify_client_secret"
 REACT_APP_REDIRECT_URI="http://localhost:3000/callback"
 ```
+![Project Name](https://github.com/Kiritokunnnnn/Sound-Trek/blob/7a0a7c63fb0964f620190e370b2ab1edff098141/images/project-name.png)
+**Create New Project**
+![Get URl and Client data](https://github.com/Kiritokunnnnn/Sound-Trek/blob/7a0a7c63fb0964f620190e370b2ab1edff098141/images/URL%20and%20Client%20data.png) 
+**Get Redirect URL, Client ID and CLient Secret**
 
 ### 4️⃣ Start the development server
 
